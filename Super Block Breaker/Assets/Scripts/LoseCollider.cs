@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
-    [SerializeField] string loseScene;
+    [SerializeField] string loseScene = "Lose";
 
     private void OnTriggerEnter2D(Collider2D col)
     {
