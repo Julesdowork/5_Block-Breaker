@@ -6,8 +6,25 @@ public class Level : MonoBehaviour
 {
     [SerializeField] int breakableBlocks;   // serialized for debugging purposes
 
+    // Cached reference
+    SceneLoader sceneLoader;
+
+    void Start()
+    {
+        sceneLoader = FindObjectOfType<SceneLoader>();
+    }
+
     public void CountBreakableBlocks()
     {
         breakableBlocks++;
+    }
+
+    public void BlockDestroyed()
+    {
+        breakableBlocks--;
+        if (breakableBlocks <= 0)
+        {
+            sceneLoader.LoadNextScene();
+        }
     }
 }
