@@ -7,7 +7,7 @@ public class LoseCollider : MonoBehaviour
 {
     [SerializeField] string loseScene = "Lose";
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerEnter2D()
     {
         SceneManager.LoadScene(loseScene);
     }

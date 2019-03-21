@@ -29,6 +29,12 @@ public class Ball : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (hasStarted)
+            GetComponent<AudioSource>().Play();
+    }
+
     private void LockToPaddle()
     {
         Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
