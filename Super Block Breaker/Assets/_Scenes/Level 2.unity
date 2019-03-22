@@ -5048,10 +5048,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5285589431233081260, guid: 70265abac8bf01d4d9c5aaf855196385,
+    - target: {fileID: 5592901496760586074, guid: 70265abac8bf01d4d9c5aaf855196385,
         type: 3}
-      propertyPath: scoreText
-      value: 
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592901496760586074, guid: 70265abac8bf01d4d9c5aaf855196385,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70265abac8bf01d4d9c5aaf855196385, type: 3}
